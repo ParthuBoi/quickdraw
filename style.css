@@ -1,0 +1,51 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    animation-name: mymove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+h1{
+    animation-name: mymove;
+    text-align: center;
+}
+
+#show_sketch{
+    float: right;
+}
+
+p{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+@keyframes anime{
+    from{box-shadow:1px 1px 38px grey};
+    from{box-shadow:1px 1px 38px greenyellow};
+    to{box-shadow:1px 1px 38px black};
+}
+
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; background: lightskyblue;}
+    15%  {top: 0px; left: 100px; background: cornflowerblue;}
+    25%  {top: 100px; left: 100px; background: yellowgreen;}
+    45%  {top: 100px; left: 0px; background: lightgreen;}
+    65% {top: 0px; left: 0px; background: lightcoral;}
+    85% {top: 0px; left: 0px; background: lightseagreen;}
+    100% {top: 0px; left: 0px; background: lightsteelblue;}
+  }
+
+canvas{
+    margin-top: 50px;
+    border-radius: 30px;
+    border:5px solid white;
+    animation-name: anime;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#bala{
+    border-radius: 10px;
+    width: 330px;
+}
